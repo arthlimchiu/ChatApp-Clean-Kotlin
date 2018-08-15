@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "117552302803",
+    "firebase_url": "https://chatapp-be1de.firebaseio.com",
+    "project_id": "chatapp-be1de",
+    "storage_bucket": "chatapp-be1de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117552302803:android:b6e88ca103b6a550",
+        "android_client_info": {
+          "package_name": "com.imakeanapp.data"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117552302803-sthbmnt0epmknvmekpt5h1a2c6gfjita.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfFCsKdfLKuMmINA8Yy5Y8FtET9nK_VKc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

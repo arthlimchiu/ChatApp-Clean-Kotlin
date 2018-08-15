@@ -1,0 +1,46 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.2.60'
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.4'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:4.0.2'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+
+    project.ext {
+        minSdkVersion = 21
+        compileSdkVersion = 27
+        targetSdkVersion = 27
+
+        support_library_version = '27.1.1'
+        constraint_layout_version = '1.1.2'
+        lifecycle_version = '1.1.1'
+        rxjava_version = '2.1.16'
+        rxandroid_version = '2.0.2'
+        dagger_version = '2.16'
+        firebase_firestore_version = '17.1.0'
+        firebase_core_version = '16.0.1'
+        junit_version = '4.12'
+        runner_version = '1.0.2'
+        espress_core_version = '3.0.2'
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

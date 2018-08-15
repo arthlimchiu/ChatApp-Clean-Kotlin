@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion project.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "com.imakeanapp.chatappkotlin"
+        minSdkVersion project.ext.minSdkVersion
+        targetSdkVersion project.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation project(':domain')
+    implementation project(':data')
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Kotlin
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    // Support
+    implementation "com.android.support:appcompat-v7:$support_library_version"
+    implementation "com.android.support:recyclerview-v7:$support_library_version"
+    implementation "com.android.support:design:$support_library_version"
+    implementation "com.android.support.constraint:constraint-layout:$constraint_layout_version"
+
+    // ViewModel
+    implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+
+    // Firebase
+    implementation "com.google.firebase:firebase-firestore:$firebase_firestore_version"
+    implementation "com.google.firebase:firebase-core:$firebase_core_version"
+
+    // RxJava
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
+
+    // RxAndroid
+    implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+
+    // Dagger
+    implementation "com.google.dagger:dagger:$dagger_version"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+
+    // Test
+    testImplementation "junit:junit:$junit_version"
+    androidTestImplementation "com.android.support.test:runner:$runner_version"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:$espress_core_version"
+}
