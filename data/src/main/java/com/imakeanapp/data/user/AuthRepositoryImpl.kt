@@ -1,4 +1,4 @@
-package com.imakeanapp.data
+package com.imakeanapp.data.user
 
 import com.google.firebase.firestore.FirebaseFirestore
 import com.imakeanapp.domain.user.model.User

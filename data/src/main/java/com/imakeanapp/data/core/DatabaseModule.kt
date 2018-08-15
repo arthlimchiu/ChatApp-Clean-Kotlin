@@ -1,4 +1,4 @@
-package com.imakeanapp.core
+package com.imakeanapp.data.core
 
 import com.google.firebase.firestore.FirebaseFirestore
 import dagger.Module
