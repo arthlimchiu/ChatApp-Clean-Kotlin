@@ -2,5 +2,16 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#75d810</color>
+    <color name="red">#b42127</color>
+    <color name="light_green">#75d810</color>
+    <color name="light_green_disabled">#98e747</color>
+    <color name="dark_green">#4e900d</color>
+    <color name="dark_green_disabled">#7aa94c</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="lighter_gray">#4f5f6d</color>
+    <color name="dark_gray">#505152</color>
+    <color name="separator_color">#b6c4cc</color>
+    <color name="text_field_color">#e5ebef</color>
 </resources>
