@@ -12,6 +12,7 @@ class App : Application() {
         injector = DaggerAppComponent.builder()
                 .databaseModule(DatabaseModule())
                 .repositoryModule(RepositoryModule())
+                .viewModelModule(ViewModelModule())
                 .build()
     }
 
