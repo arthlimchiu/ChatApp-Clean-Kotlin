@@ -7,7 +7,5 @@ import io.reactivex.Observable
 
 class GetMessagesUseCase(private val repository: MessagesRepository) : ObservableUseCase<List<Message>> {
 
-    override fun execute(): Observable<List<Message>> {
-        return repository.getMessages()
-    }
+    override fun execute() = repository.getMessages()
 }

@@ -10,11 +10,7 @@ import io.reactivex.Observable
 class MessagesViewModel(private val getMessages: GetMessagesUseCase,
                         private val sendMessage: SendMessageUseCase) : ViewModel() {
 
-    fun sendMessage(message: Message): Completable {
-        return sendMessage.execute(message)
-    }
+    fun sendMessage(message: Message) = sendMessage.execute(message)
 
-    fun getMessages(): Observable<List<Message>> {
-        return getMessages.execute()
-    }
+    fun getMessages() = getMessages.execute()
 }

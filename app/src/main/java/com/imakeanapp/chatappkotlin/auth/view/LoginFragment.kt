@@ -72,8 +72,7 @@ class LoginFragment : Fragment() {
                                 .observeOn(AndroidSchedulers.mainThread())
                                 .subscribe(
                                         { user -> callback.onLoginSuccess(user.username) },
-                                        {
-                                            e ->
+                                        { e ->
                                             enableLoginButton()
                                             showUsernameError()
                                             showPasswordError()

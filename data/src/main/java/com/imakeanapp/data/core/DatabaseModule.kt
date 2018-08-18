@@ -10,7 +10,5 @@ class DatabaseModule {
 
     @Provides
     @Singleton
-    fun providesFirebaseFirestore(): FirebaseFirestore {
-        return FirebaseFirestore.getInstance()
-    }
+    fun providesFirebaseFirestore() = FirebaseFirestore.getInstance()
 }

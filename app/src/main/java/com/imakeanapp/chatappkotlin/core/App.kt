@@ -8,18 +8,11 @@ class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        INSTANCE = this
         injector = DaggerAppComponent.builder()
                 .databaseModule(DatabaseModule())
                 .repositoryModule(RepositoryModule())
                 .viewModelModule(ViewModelModule())
                 .build()
-    }
-
-    companion object {
-        private var INSTANCE: App? = null
-
-        fun get(): App = INSTANCE!!
     }
 }
 

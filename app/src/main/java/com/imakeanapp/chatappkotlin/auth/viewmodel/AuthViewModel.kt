@@ -9,11 +9,7 @@ import io.reactivex.Single
 class AuthViewModel(private val signUp: SignUpUseCase,
                     private val login: LoginUseCase) : ViewModel() {
 
-    fun signUp(username: String, password: String): Single<User> {
-        return signUp.execute(User(username, password))
-    }
+    fun signUp(username: String, password: String) = signUp.execute(User(username, password))
 
-    fun login(username: String, password: String): Single<User> {
-        return login.execute(User(username, password))
-    }
+    fun login(username: String, password: String) = login.execute(User(username, password))
 }

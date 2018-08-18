@@ -72,8 +72,7 @@ class SignUpFragment : Fragment() {
                                 .observeOn(AndroidSchedulers.mainThread())
                                 .subscribe(
                                         { user -> callback.onSignUpSuccess(user.username) },
-                                        {
-                                            e ->
+                                        { e ->
                                             enableSignUpButton()
                                             showUsernameError()
                                             showPasswordError()

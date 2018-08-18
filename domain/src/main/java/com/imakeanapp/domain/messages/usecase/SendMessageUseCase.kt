@@ -7,7 +7,5 @@ import io.reactivex.Completable
 
 class SendMessageUseCase(private val repository: MessagesRepository) : CompletableWithParamUseCase<Message> {
 
-    override fun execute(t: Message): Completable {
-        return repository.sendMessage(t)
-    }
+    override fun execute(t: Message) = repository.sendMessage(t)
 }

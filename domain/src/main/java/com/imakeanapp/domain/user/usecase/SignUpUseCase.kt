@@ -7,7 +7,5 @@ import io.reactivex.Single
 
 class SignUpUseCase(private val repository: AuthRepository) : SingleWithParamUseCase<User, User> {
 
-    override fun execute(t: User): Single<User> {
-        return repository.signup(t.username, t.password)
-    }
+    override fun execute(t: User) = repository.signup(t.username, t.password)
 }
