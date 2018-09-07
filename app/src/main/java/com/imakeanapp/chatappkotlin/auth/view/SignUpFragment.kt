@@ -61,8 +61,10 @@ class SignUpFragment : Fragment() {
         passwordError = view.findViewById(R.id.password_error)
         login = view.findViewById(R.id.login)
         login.paintFlags = login.paintFlags or Paint.UNDERLINE_TEXT_FLAG
-        login.setOnClickListener { callback.onLoginClick() }
         signUp = view.findViewById(R.id.sign_up)
+
+        login.setOnClickListener { callback.onLoginClick() }
+
         signUp.setOnClickListener {
             if (!hasErrors()) {
                 InputUtil.hideKeyboard(requireNotNull(context), view)
