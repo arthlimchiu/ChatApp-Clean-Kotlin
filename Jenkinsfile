@@ -64,7 +64,7 @@ pipeline {
 
         archiveArtifacts '**/*.apk'
 
-        signAndroidApks keyStoreId: 'huber-keystore', keyAlias: 'huberchat', apksToSign: '**/*-unsigned.apk'
+        signAndroidApks keyStoreId: 'personal-keystore', keyAlias: 'myplaystorekey', apksToSign: '**/*-unsigned.apk'
       }
       post {
         aborted {
