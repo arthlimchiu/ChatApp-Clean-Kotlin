@@ -39,6 +39,7 @@ class WelcomeFragment : Fragment() {
         login = view.findViewById(R.id.login)
 
         signUp.setOnClickListener { callback.onSignUpClick() }
+
         login.setOnClickListener { callback.onLoginClick() }
 
         return view
