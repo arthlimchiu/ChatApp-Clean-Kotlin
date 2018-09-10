@@ -96,7 +96,7 @@ pipeline {
           slackSend color: 'warning', message: "ALPHA RELEASE UNSTABLE: \n `${env.RUN_DISPLAY_URL}`"
         }
         failure {
-          slackSend color: 'danger', message: "ALPHA RELEASE FAILED: \n `${env.RUN_DISPLA2Y_URL}`"
+          slackSend color: 'danger', message: "ALPHA RELEASE FAILED: \n `${env.RUN_DISPLAY_URL}`"
         }
         success {
           slackSend color: 'good', message: "ALPHA RELEASE SUCCESSFUL: \n `${env.RUN_DISPLAY_URL}`"
