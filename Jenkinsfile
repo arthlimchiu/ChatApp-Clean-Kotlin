@@ -90,16 +90,16 @@ pipeline {
       }
       post {
         aborted {
-          slackSend color: 'warning', message: "ALPHA RELEASE ABORTED: ${env.RUN_DISPLAY_URL}"
+          slackSend color: 'warning', message: "ALPHA RELEASE ABORTED: \n `${env.RUN_DISPLAY_URL}`"
         }
         unstable {
-          slackSend color: 'warning', message: "ALPHA RELEASE UNSTABLE: ${env.RUN_DISPLAY_URL}"
+          slackSend color: 'warning', message: "ALPHA RELEASE UNSTABLE: \n `${env.RUN_DISPLAY_URL}`"
         }
         failure {
-          slackSend color: 'danger', message: "ALPHA RELEASE FAILED: ${env.RUN_DISPLA2Y_URL}"
+          slackSend color: 'danger', message: "ALPHA RELEASE FAILED: \n `${env.RUN_DISPLA2Y_URL}`"
         }
         success {
-          slackSend color: 'good', message: "ALPHA RELEASE SUCCESSFUL: ${env.RUN_DISPLAY_URL}"
+          slackSend color: 'good', message: "ALPHA RELEASE SUCCESSFUL: \n `${env.RUN_DISPLAY_URL}`"
         }
       }
     }
