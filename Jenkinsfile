@@ -81,5 +81,27 @@ pipeline {
         }
       }
     }
+    stage('Deploy to Alpha') {
+      when {
+        branch 'master'
+      }
+      steps {
+        androidApkUpload googleCredentialsId: 'google-play-publishing', apkFilesPattern: '**/*-release.apk', trackName: 'alpha'
+      }
+      post {
+        aborted {
+          slackSend color: 'warning', message: "ALPHA RELEASE ABORTED: ${env.RUN_DISPLAY_URL}"
+        }
+        unstable {
+          slackSend color: 'warning', message: "ALPHA RELEASE UNSTABLE: ${env.RUN_DISPLAY_URL}"
+        }
+        failure {
+          slackSend color: 'danger', message: "ALPHA RELEASE FAILED: ${env.RUN_DISPLA2Y_URL}"
+        }
+        success {
+          slackSend color: 'good', message: "ALPHA RELEASE SUCCESSFUL: ${env.RUN_DISPLAY_URL}"
+        }
+      }
+    }
   }
 }
