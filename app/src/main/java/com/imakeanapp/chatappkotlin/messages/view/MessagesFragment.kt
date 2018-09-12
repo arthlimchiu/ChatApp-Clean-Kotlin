@@ -80,9 +80,11 @@ class MessagesFragment : Fragment() {
         message = view.findViewById(R.id.message)
         logOut = view.findViewById(R.id.log_out)
         messagesList = view.findViewById(R.id.message_list)
+
         val manager = LinearLayoutManager(context)
         manager.reverseLayout = true
         messagesList.layoutManager = manager
+
         adapter = MessagesAdapter(username, listOf())
         messagesList.adapter = adapter
 
