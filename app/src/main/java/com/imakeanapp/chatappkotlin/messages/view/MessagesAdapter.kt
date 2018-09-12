@@ -27,9 +27,7 @@ class MessagesAdapter(private val username: String,
         return MessageViewHolder(view)
     }
 
-    override fun getItemCount(): Int {
-        return chats.size
-    }
+    override fun getItemCount() = chats.size
 
     override fun onBindViewHolder(holder: MessageViewHolder, position: Int) {
         holder.bind(chats[position])
