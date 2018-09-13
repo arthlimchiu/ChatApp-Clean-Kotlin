@@ -59,8 +59,10 @@ class SignUpFragment : Fragment() {
         password = view.findViewById(R.id.password)
         usernameError = view.findViewById(R.id.username_error)
         passwordError = view.findViewById(R.id.password_error)
+
         login = view.findViewById(R.id.login)
         login.paintFlags = login.paintFlags or Paint.UNDERLINE_TEXT_FLAG
+
         signUp = view.findViewById(R.id.sign_up)
 
         login.setOnClickListener { callback.onLoginClick() }
