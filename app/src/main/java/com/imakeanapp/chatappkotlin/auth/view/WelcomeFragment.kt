@@ -51,6 +51,7 @@ class WelcomeFragment : Fragment() {
         val animationY = ObjectAnimator.ofFloat(logo, "scaleY", 0f, 1f)
         animationX.duration = 500
         animationY.duration = 500
+
         val scaleUp = AnimatorSet()
         scaleUp.playTogether(animationX, animationY)
         scaleUp.start()
