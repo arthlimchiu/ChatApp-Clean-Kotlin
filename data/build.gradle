@@ -13,7 +13,7 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
     }
 
@@ -53,8 +53,8 @@ dependencies {
 
     // Test
     testImplementation "junit:junit:$junit_version"
-    androidTestImplementation "com.android.support.test:runner:$runner_version"
-    androidTestImplementation "com.android.support.test.espresso:espresso-core:$espress_core_version"
+    androidTestImplementation "androidx.test:runner:$runner_version"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espress_core_version"
 }
 
 apply plugin: 'com.google.gms.google-services'
