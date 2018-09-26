@@ -7,7 +7,7 @@ Architecture: Clean Architecture + MVVM
 
 Libraries: RxJava 2, Dagger 2, Jetpack ViewModel, Cloud Firestore
 
-Note: Please your own google-services.json which you can get when you create a Firebase project. The google-services.json file found in this project will be removed in the future.
+Note: Please your own google-services.json in **data module** which you can get when you create a Firebase project. The google-services.json file found in this project will be removed in the future.
 
 ## Scope
 * 1 chat room only
