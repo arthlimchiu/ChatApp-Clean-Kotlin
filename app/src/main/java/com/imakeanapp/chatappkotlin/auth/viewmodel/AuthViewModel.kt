@@ -1,10 +1,9 @@
 package com.imakeanapp.chatappkotlin.auth.viewmodel
 
-import android.arch.lifecycle.ViewModel
+import androidx.lifecycle.ViewModel
 import com.imakeanapp.domain.user.model.User
 import com.imakeanapp.domain.user.usecase.LoginUseCase
 import com.imakeanapp.domain.user.usecase.SignUpUseCase
-import io.reactivex.Single
 
 class AuthViewModel(private val signUp: SignUpUseCase,
                     private val login: LoginUseCase) : ViewModel() {

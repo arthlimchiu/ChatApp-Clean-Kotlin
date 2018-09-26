@@ -1,7 +1,7 @@
 package com.imakeanapp.chatappkotlin.messages.viewmodel
 
-import android.arch.lifecycle.ViewModel
-import android.arch.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
 import com.imakeanapp.domain.messages.usecase.GetMessagesUseCase
 import com.imakeanapp.domain.messages.usecase.SendMessageUseCase
 import javax.inject.Inject

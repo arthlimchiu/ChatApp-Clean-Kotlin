@@ -1,7 +1,7 @@
 package com.imakeanapp.chatappkotlin.auth.viewmodel
 
-import android.arch.lifecycle.ViewModel
-import android.arch.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
 import com.imakeanapp.domain.user.usecase.LoginUseCase
 import com.imakeanapp.domain.user.usecase.SignUpUseCase
 import javax.inject.Inject

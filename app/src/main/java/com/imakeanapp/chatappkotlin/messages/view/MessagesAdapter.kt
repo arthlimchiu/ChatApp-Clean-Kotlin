@@ -1,10 +1,10 @@
 package com.imakeanapp.chatappkotlin.messages.view
 
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 import com.imakeanapp.chatappkotlin.R
 import com.imakeanapp.domain.messages.model.Message
 

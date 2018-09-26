@@ -5,11 +5,11 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 
 android {
-    compileSdkVersion project.ext.compileSdkVersion
+    compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
-        minSdkVersion project.ext.minSdkVersion
-        targetSdkVersion project.ext.targetSdkVersion
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
 
@@ -35,10 +35,10 @@ dependencies {
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
     // Support
-    implementation "com.android.support:appcompat-v7:$support_library_version"
+    implementation "androidx.appcompat:appcompat:$app_compat_version"
     // Override firebase libraries third-party dependencies to fix incompatible versions
-    implementation "com.android.support:support-v4:$support_library_version"
-    implementation "com.android.support:support-media-compat:$support_library_version"
+//    implementation "androidx.legacy:legacy-support-v4:$support_v4_version"
+//    implementation "androidx.media:media:$support_media_version"
 
     // Firebase
     implementation "com.google.firebase:firebase-firestore:$firebase_firestore_version"

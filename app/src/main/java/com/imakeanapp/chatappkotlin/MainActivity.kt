@@ -1,7 +1,7 @@
 package com.imakeanapp.chatappkotlin
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.imakeanapp.chatappkotlin.auth.view.LoginFragment
 import com.imakeanapp.chatappkotlin.auth.view.SignUpFragment
 import com.imakeanapp.chatappkotlin.auth.view.WelcomeFragment
